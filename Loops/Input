@@ -1,0 +1,43 @@
+Number Input:-
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    
+    System.out.println("number is " + n);
+}
+}
+
+Name or Character Input:-
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    String name = scn.nextLine();
+    
+    System.out.println("Name is " + name);
+}
+}
+
+Number and Name or Character Input:-
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    int n = Integer.parseInt(scn.nextLine());
+    String name = scn.nextLine();
+    
+    System.out.println("Hello " + name + ". Here is the counting.");
+    for(int i =1;i<=n;i++){
+        System.out.println(i);
+    }
+    System.out.println("THANK YOU:)");
+}
+}
