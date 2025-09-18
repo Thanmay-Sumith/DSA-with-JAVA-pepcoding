@@ -1,0 +1,44 @@
+Method - 1:-
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args){
+    int n1 = 5;
+    int n2 = 10;
+
+    if(n1 == n2){
+        System.out.println(n1 + " is equal to " + n2);
+    }
+    else if(n1 > n2){
+        System.out.println(n1 + " is greater than " + n2);
+    }
+    else{
+        System.out.println(n1 + " is smaller than " + n2);
+    }
+
+}
+}
+
+Method - 2:-
+import java.util.*;
+
+public class Main{
+
+public static void main(String[] args){
+    int n1 = 7;
+    int n2 = 17;
+
+    if(n1 == n2){
+        System.out.println(n1 + " is equal to " + n2);
+    }
+    else{
+        if(n1 > n2){
+            System.out.println(n1 + " is greater than " + n2);
+        }
+        else{
+            System.out.println(n1 + " is smaller than " + n2);
+        }
+    }
+}
+}
