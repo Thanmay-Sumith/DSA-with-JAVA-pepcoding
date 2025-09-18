@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class FirstProgram{
+
+public static void main(String[] args){
+    //Sum:-
+    int x = 20;
+    int y = 5;
+    int sum = x + y;
+    System.out.println(sum);
+    //Multiplication:-
+    int prod = x * y;
+    System.out.println(prod);
+    //Division:-
+    int div = x/y;
+    System.out.println(div);
+    //Modular Operator:-
+    int mod = x % y;
+    System.out.println(mod);
+    //Expresion:-
+    int exp = (x * y)/ (x + y);
+    System.out.println(exp);
+}
+}
