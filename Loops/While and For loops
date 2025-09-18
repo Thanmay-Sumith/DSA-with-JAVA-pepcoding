@@ -1,0 +1,28 @@
+While loop:-
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    int i = 0;
+    
+    while(i <= 9){
+        System.out.println(i);
+        i++;
+    }
+    System.out.println("Done");
+}
+}
+
+For loop:-
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    for(int i = 0; i <= 9; i++){
+        System.out.println(i);
+    }
+    System.out.println("Done");
+}
+}
