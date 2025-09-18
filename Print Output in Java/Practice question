@@ -1,0 +1,21 @@
+import java.util.*;
+Method-1:-
+
+public class FirstProgram{
+
+public static void main(String[] args){
+    System.out.print("*\n**\n***\n****\n*****");
+}
+}
+
+Method-2:-
+public class FirstProgram{
+
+public static void main(String[] args){
+    System.out.println("*");
+    System.out.println("**");
+    System.out.println("***");
+    System.out.println("****");
+    System.out.println("*****");
+}
+}
