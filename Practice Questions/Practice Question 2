@@ -1,0 +1,25 @@
+//Print all prime numbers till N:-
+
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    int n1 = scn.nextInt();
+    int n2 = scn.nextInt();
+    
+    for(int x= n1; x < n2; x++){
+        int count = 0;
+        for(int div=2; div * div <= x; div++){
+            if(x % div == 0){
+                count++;
+                break;
+            }
+        }
+        if(count == 0){
+            System.out.println(x);
+        }
+    }
+}
+}
