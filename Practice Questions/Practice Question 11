@@ -1,0 +1,32 @@
+//Pythagorean Triplets:-
+
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    int x = scn.nextInt();
+    int y = scn.nextInt();
+    int z = scn.nextInt();
+    
+    int max = x;
+    if(y > max){
+        max = y;
+    }
+    if(z > max){
+        max = z;
+    }
+    
+    if(max == x){
+        boolean A = ((y * y + z * z) == (x * x));
+        System.out.println(A);
+    }else if(max == y){
+        boolean A = ((x * x + z * z) == (y * y));
+        System.out.println(A);
+    }else{
+        boolean A = ((y * y + x * x) == (z * z));
+        System.out.println(A);
+    }
+}
+}
