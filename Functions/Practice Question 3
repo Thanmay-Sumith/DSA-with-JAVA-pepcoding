@@ -1,0 +1,25 @@
+//Any Base to Decimal Conversion:-
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int x = scn.nextInt();
+    int Ans = BasetoDec(n,x);
+    System.out.println(Ans);
+}
+
+public static int BasetoDec(int n,int x){
+    int rv = 0;
+    int p = 1;
+    while(n>0){
+        int dig = n % 10;
+        n = n/10;
+        rv += dig*p;
+        p = p * x;
+    }
+    return rv;
+}
+}
