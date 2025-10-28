@@ -1,0 +1,40 @@
+//Any Base to Any Base:-
+
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    Scanner scn = new Scanner(System.in);
+    int n = scn.nextInt();
+    int b1 = scn.nextInt();
+    int b2 = scn.nextInt();
+    int A1 = BasetoDec(n,b1);
+    int A2 = DectoBase(A1,b2);
+    System.out.println(A2);
+}
+
+public static int BasetoDec(int n,int b1){
+    int rv = 0;
+    int p = 1;
+    while(n>0){
+        int dig = n % 10;
+        n = n / 10;
+        rv += dig*p;
+        p *= b1;
+    }
+    return rv;
+}
+
+public static int DectoBase(int A1,int b2){
+    int rv = 0;
+    int p = 1;
+    while(A1>0){
+        int dig = A1 %  2;
+        A1 = A1/2;
+        rv += dig*p;
+        p = p*10;
+    }
+    return rv;
+}
+}
