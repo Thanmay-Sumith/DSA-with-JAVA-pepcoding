@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class Main{
+    
+public static void main(String[] args){
+    int[] array = new int[3];
+    System.out.println(array.length);
+    array[0]=17;
+    array[1]=18;
+    array[2]=45;
+    System.out.println(array[0]);
+    for(int i = 0;i < array.length;i++){
+        System.out.println(array[i]);
+    }
+}
+}
